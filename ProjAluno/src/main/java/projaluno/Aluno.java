@@ -72,7 +72,7 @@ public class Aluno {
             return "Reprovado!!";
         }else if(calcularFrequencia() < 0.75 && calcularMedia() >= 6){
             return "Aprovado por média e reprovado por frequência!!!";
-        }else if(calcularFrequencia() > 0.75 && calcularMedia() < 6){
+        }else if(calcularFrequencia() >= 0.75 && calcularMedia() < 6){
             return "Reprovado por média e aprovado por frequência!!!";
         }else{
             return "Parabens, você foi Aprovado!!!";
