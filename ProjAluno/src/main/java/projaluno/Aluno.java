@@ -63,7 +63,7 @@ public class Aluno {
     }
     
     public double calcularFrequencia(){
-        return this.quantidadeDeFaltas / this.diasLetivos;
+        return 1 - (this.quantidadeDeFaltas / this.diasLetivos);
     }
     
     public String verificarSituacao(){
